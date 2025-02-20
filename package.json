@@ -1,0 +1,17 @@
+{
+  "name": "prak2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass public/styles/main.scss public/styles/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "sass": "^1.85.0"
+  }
+}

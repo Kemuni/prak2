@@ -1,0 +1,26 @@
+@use 'variables';
+@use 'sass:color';
+
+// Основные стили
+body {
+  font-family: variables.$font-stack;
+  font-size: variables.$base-font-size;
+  background-color: variables.$background-color;
+  color: variables.$text-color;
+}
+
+.perfect-btn {
+  background-color: variables.$primary-color;
+  color: variables.$secondary-color;
+  border: none;
+  border-radius: variables.$border-radius;
+
+  &:hover {
+    background-color: color.adjust(variables.$primary-color, $alpha: -0.25);
+    color: black;
+  }
+}
+
+p {
+  display: inline;
+}
