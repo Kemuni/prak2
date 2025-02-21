@@ -1,15 +1,15 @@
 const express = require('express')
 const app = express()
 
-// Укажем директорию в которой будут лежать наши файлы
+// Ну тут короче все наши файлики красоты
 app.use(express.static('public'))
 
-// Отправляем index.html, когда пользователи получают доступ к
-// корневому каталог с использованием res.sendFile()
+// А тута у нас главная страница
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
 })
 
+// Тута все остальные страницы
 app.use((req, res, next) => {
     res.status(404).sendFile(__dirname + '/public/404.html')
 })
